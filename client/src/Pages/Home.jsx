@@ -1,8 +1,10 @@
+import GetStarted from "../Components/GetStarted/GetStarted";
+
 function Home() {
     return (
-      <div>
+      <div >
         
-        ]
+        <GetStarted/>
       </div>
     );
   }
