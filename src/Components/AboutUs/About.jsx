@@ -5,7 +5,7 @@ import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 const AboutUs = () => {
   return (
     <section className="w-full bg-white" >
-    <div className=" w-[90%] md:w-full mx-auto flex flex-col  md:flex-row items-center gap-10 px-5 sm:px-10 lg:px-20 md:py-12 py-16 ">
+    <div className=" w-[90%] md:w-full mx-auto flex flex-col  md:flex-row items-center gap-10  sm:px-10 lg:px-20 md:py-12 px-0">
         
       {/* Left Section */}
       <div className="relative lg:w-[55%]  h-[540px] w-[100%]">
