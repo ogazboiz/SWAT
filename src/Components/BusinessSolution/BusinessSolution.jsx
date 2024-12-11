@@ -157,7 +157,7 @@ const BusinessSolutions = () => {
                 {service.title}
               </h2>
               {/* Description */}
-              <p className="mt-2 text-[13px] lg:text-[15px] font-[300] font-sanss leading-[24px] tracking-wide">
+              <p className="mt-2 text-[15px] lg:text-[15px] font-[300] font-sanss leading-[24px] tracking-wide">
                 {service.description}
               </p>
               {/* Link */}
