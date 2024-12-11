@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-purple': 'linear-gradient(135deg, #2a00ff, #b000ff)',
+      },
       container: {
         center: true,
       },
