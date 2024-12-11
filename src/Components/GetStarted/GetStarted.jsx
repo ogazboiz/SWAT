@@ -22,13 +22,13 @@ const GetStarted = () => {
       <div className="relative top-12  mx-auto grid grid-cols-1  items-center md:justify-between w-[100%]">
         {/* Text Section */}
         <div className="  w-full text-center md:text-left space-y-4  lg:w-[47%] md:-[100%]">
-          <h2 className="text-[40.65px] font-sanss font-semibold  text-[#FFFFFF] leading-[58.5px]">
+          <h2 className="lg:text-[40.65px] text-3xl font-sanss font-semibold  text-[#FFFFFF] leading-[58.5px]">
             Let Us Discuss Your Business Goals & Create A Standard Application Today
           </h2>
         </div>
 
         {/* Button Section */}
-        <div className="mt-6 md:mt-0 relative top-14">
+        <div className="mt-6 md:mt-0 relative top-6 w-[250px]  md:top-20 lg:top-14">
           <button className="bg-red-600 hover:bg-red-700 text-white text-[16px] font-sans font-medium py-3 px-6  flex items-center space-x-2">
             <span>Get Started</span>
             <svg
