@@ -17,7 +17,7 @@ function Home() {
       <BusinessSolutions />
       <MethodologySection />
       <GlobalLeader />
-      <StatsSection/>
+      <StatsSection />
       <CaseStudies />
       <GetStarted />
     </div>

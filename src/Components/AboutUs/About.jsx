@@ -4,61 +4,54 @@ import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 
 const AboutUs = () => {
   return (
-    <section className="w-full bg-white" >
-    <div className=" w-[90%] mx-auto flex flex-col md:flex-row items-center gap-10 px-5 sm:px-10 lg:px-20 py-16 ">
-        
-      {/* Left Section */}
-      <div className="relative w-[70%]  bg-red-600 md:w-1/2">
-        {/* Main Image */}
-        <img
-          src={aboutpic}
-          alt="Main"
-          className="w-[100%] rounded-lg"
-        />
-        {/* Secondary Image */}
-        <div className="absolute bottom-[-80rem] sm:bottom-[-2.5rem] lg:left-[60%]   left-[60%] bg-red-500 p-3 w-[200px] sm:w-[250px]  lg:h-[320px] lg:w-[240px]">
-          <img
-            src={aboutpic2}
-            alt="Secondary"
-            className="w-full h-full  "
-          />
-          <div className="absolute  bottom-[1.8rem]  right-[17rem] w-[200px]  h-[40%] bg-purple-700 text-white  r text-center shadow-md">
-              
-            <p className="text-2xl sm:text-3xl font-bold">10+</p>
+    <section className="w-full bg-white lg:h-[780px]">
+      <div className=" 2xl:w-[1440px] mx-auto flex flex-col lg:flex-row  items-center gap-10 px-5 sm:px-10 lg:px-20 md:py-12 lg:mt-28
+        ">
+        {/* Left Section */}
+        <div className="relative lg:w-[55%]  h-[540px] w-[100%]">
+          {/* Main Image */}
+          <img src={aboutpic} alt="Main" className="w-[100%] h-full" />
+          {/* Secondary Image */}
+          <div className="relative lg:bottom-[16rem] 2xl:bottom-[14rem]  bottom-[16.3rem] h-[300px]  lg:left-[59%] 2xl:left-[64%] md:left-[69%]   left-[40%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
+            <img src={aboutpic2} alt="Secondary" className="w-full h-full " />
+          </div>
+          <div className="absolute -bottom-[1.6rem] lg:left-[8rem] 2xl:left-[13rem] md:left-9  right-[14rem] w-[170px] lg:w-[244px] h-[178px] bg-purple-700 text-white text-center shadow-md flex flex-col items-center justify-center">
+            <p className="text-[54px] sm:text-3xl leading-[70px] font-semibold">
+              10+
+            </p>
             <p className="text-sm sm:text-base">Happy Clients</p>
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#EC0112]"></div>
           </div>
         </div>
-      </div>
 
-      {/* Right Section */}
-      <div className="w-full md:w-1/2 lg:relative lg:-right-24 bg-slate-900 text-gray-800">
-        <p className="text-red-500 uppercase font-bold text-sm tracking-wide mb-2">
-          About Us
-        </p>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5 leading-tight">
-          We Are Business Consultants Dedicated To Driving Your Success
-        </h2>
-        <p className="text-sm sm:text-base leading-relaxed text-[#65676B] font-sans mb-6">
-          We’ve been a Strategy and Technology service provider for nearly two
-          decades, and we bring unrivaled capabilities, tools, technologies,
-          and talent to every engagement, augmented by an ecosystem of
-          best-of-breed partners that provide specialized expertise. We’ll help
-          you mobilize for change, navigate uncertainty, and flex as needed, so
-          you achieve sustained, profitable growth—a feat only 1 in 11
-          companies manages to pull off.
-        </p>
-        <blockquote className="text-[#7F7F7F] font-sans leading-relaxed text-sm sm:text-base italic border-l-4 border-red-500 pl-4 mb-6">
-          “We offer creative solutions that have helped lots of brands,
-          individuals, organizations, and companies across the globe and
-          sectors develop and execute winning strategies and Technology
-          solutions”.
-        </blockquote>
-        <button className="bg-red-500 text-white py-2 px-4 sm:py-3 sm:px-6 rounded-lg font-bold text-sm shadow-md hover:bg-red-600 transition">
-          Learn More →
-        </button>
+        {/* Right Section */}
+        <div className="lg:w-[50%]  relative lg:-right-8   md:h-[60%]  h-full  text-gray-800">
+          <p className="mb-2 text-sm font-bold tracking-wide text-red-500 uppercase">
+            About Us
+          </p>
+          <h2 className="mb-5  font-semibold leading-[58.5px]  lg:text-[45px] font-sanss">
+            We Are Business Consultants Dedicated To Driving Your Success
+          </h2>
+          <p className="text-[17px] sm:text-base leading-[25.5px] text-[#65676B] font-sanss mb-6 font-[400]">
+            We’ve been a Strategy and Technology service provider for nearly two
+            decades, and we bring unrivaled capabilities, tools, technologies,
+            and talent to every engagement, augmented by an ecosystem of
+            best-of-breed partners that provide specialized expertise. We’ll
+            help you mobilize for change, navigate uncertainty, and flex as
+            needed, so you achieve sustained, profitable growth—a feat only 1 in
+            11 companies manages to pull off.
+          </p>
+          <blockquote className="text-[#7F7F7F] font-sanss leading-[25px] text-[17px] sm:text-base italic border-l-4 border-red-500 pl-4 mb-6">
+            “We offer creative solutions that have helped lots of brands,
+            individuals, organizations, and companies across the globe and
+            sectors develop and execute winning strategies and Technology
+            solutions”.
+          </blockquote>
+          <button className="px-4 py-2 text-sm font-bold text-white transition bg-red-500 shadow-md sm:py-3 sm:px-6 hover:bg-red-600">
+            Learn More →
+          </button>
+        </div>
       </div>
-      
-    </div>
     </section>
   );
 };

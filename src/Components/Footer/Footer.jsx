@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container px-6 mx-auto  lg:w-[1440px] pt-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:gap-4" >
           {/* Logo and About Section */}
-          <div className="col-span-1 w-[110%]">
+          <div className="col-span-1 lg:w-[110%]">
             <div className="mb-4">
               <img src={swat} alt="SWAT Logo" className="h-[70px] w-[166.26px]" />
             </div>
