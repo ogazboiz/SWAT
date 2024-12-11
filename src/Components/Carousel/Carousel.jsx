@@ -8,9 +8,9 @@ const Carousel = () => {
   const scroll = (direction) => {
     const { current } = carouselRef;
     if (direction === "left") {
-      current.scrollBy({ left: -300, behavior: "smooth" });
+      current.scrollBy({ left: -380, behavior: "smooth" });
     } else if (direction === "right") {
-      current.scrollBy({ left: 300, behavior: "smooth" });
+      current.scrollBy({ left: 380, behavior: "smooth" });
     }
   };
 
@@ -65,7 +65,7 @@ const Carousel = () => {
         {/* Cards Wrapper */}
         <div
           ref={carouselRef}
-          className="flex gap-4 overflow-x-hidden lg:px-8 scrollbar-hide scroll-smooth"
+          className="flex gap-4 overflow-x-hidden scrollbar-hide scroll-smooth"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {cards.map((card, index) => (
