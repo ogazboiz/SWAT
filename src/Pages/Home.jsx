@@ -12,12 +12,13 @@ function Home() {
     <div>
       <Hero />
       <FeaturesSection />
+      <AboutUs />
       <CaseStudies />
       <BusinessSolutions />
       <MethodologySection />
       <GlobalLeader />
 
-      <AboutUs />
+     
 
       <GetStarted />
     </div>
