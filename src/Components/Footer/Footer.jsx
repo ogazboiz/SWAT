@@ -7,11 +7,11 @@ import { FaYoutube } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <footer className="bg-purple-700 text-white py-10">
-      <div className="container mx-auto px-6 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-4" >
+    <footer className="py-10 text-white bg-[#673AB7] w-full lg:h-[469px]">
+      <div className="container px-6 mx-auto  lg:w-[1440px] pt-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:gap-4" >
           {/* Logo and About Section */}
-          <div className="col-span-1 w-[110%]">
+          <div className="col-span-1 lg:w-[110%]">
             <div className="mb-4">
               <img src={swat} alt="SWAT Logo" className="h-[70px] w-[166.26px]" />
             </div>
@@ -24,8 +24,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="font-sanss lg:ml-12">
-            <h4 className=" text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 font-normal text-[15px] leading-[22.5px] text-white opacity-[83%]">
+            <h4 className="mb-4 text-lg font-semibold ">Quick Links</h4>
+            <ul className="space-y-2 font-normal text-[15px] leading-8 text-white opacity-[83%]">
               {[
                 { label: "Homepage", href: "/" },
                 { label: "About Us", href: "/about" },
@@ -47,8 +47,8 @@ const Footer = () => {
 
           {/* Consulting Services */}
           <div className="font-sanss">
-            <h4 className="text-lg font-semibold mb-4">Consulting Service</h4>
-            <ul className="space-y-2 font-normal text-[15px] leading-[22.5px] text-white opacity-[83%]">
+            <h4 className="mb-4 text-lg font-semibold">Consulting Service</h4>
+            <ul className="space-y-2 font-normal text-[15px] leading-8 text-white opacity-[83%]">
               {[
                 "Strategic Planning",
                 "Process Optimization",
@@ -68,41 +68,41 @@ const Footer = () => {
 
           {/* Address and Contact */}
           <div className="font-sanss">
-            <h4 className="text-lg font-semibold mb-4">Head Office Address</h4>
+            <h4 className="mb-4 text-lg font-semibold">Head Office Address</h4>
             <p className="font-normal text-[15px] leading-[22.5px] text-white opacity-[83%] mb-4">
               Apo Urban Market, Apo Resettlement Apo, FCT Abuja
             </p>
-            <h4 className="text-lg font-semibold mb-2">Contact Details</h4>
+            <h4 className="mb-2 text-lg font-semibold">Contact Details</h4>
             <p className="font-normal text-[15px] leading-[22.5px] text-white opacity-[83%]">+2348034474677</p>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="my-6 border-t border-gray-400"></div>
+        <div className="mt-16 mb-10 border-t border-gray-400"></div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col lg:flex-row items-center justify-between text-sm">
+        <div className="flex flex-col items-center justify-between text-sm lg:flex-row">
           <p className="text-center lg:text-left">
             All Rights Reserved – Aided Designrr 2024 (C)
           </p>
-          <div className="mt-4 lg:mt-0 flex space-x-4">
+          <div className="flex mt-4 space-x-4 lg:mt-0">
             <a
               href="#"
-              className="hover:text-gray-300 text-lg"
+              className="text-lg hover:text-gray-300"
               aria-label="Facebook"
             >
               <FaFacebook/>
             </a>
             <a
               href="#"
-              className="hover:text-gray-300 text-lg"
+              className="text-lg hover:text-gray-300"
               aria-label="Twitter"
             >
               <FaTwitter/>
             </a>
             <a
               href="#"
-              className="hover:text-gray-300 text-lg"
+              className="text-lg hover:text-gray-300"
               aria-label="YouTube"
             >
              
@@ -110,7 +110,7 @@ const Footer = () => {
             </a>
             <a
               href="#"
-              className="hover:text-gray-300 text-lg"
+              className="text-lg hover:text-gray-300"
               aria-label="Pinterest"
             >
               <FaPinterest/>

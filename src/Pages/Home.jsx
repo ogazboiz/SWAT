@@ -6,6 +6,7 @@ import GlobalLeader from "../Components/GlobalLeader/GlobalLeader";
 import FeaturesSection from "../Components/Hero/FeaturesSection";
 import Hero from "../Components/Hero/Hero";
 import MethodologySection from "../Components/MethodologySection/MethodologySection";
+import StatsSection from "../Components/StatsSection/StatsSection";
 
 function Home() {
   return (
@@ -13,14 +14,11 @@ function Home() {
       <Hero />
       <FeaturesSection />
       <AboutUs />
-      <GlobalLeader />
-      <CaseStudies />
       <BusinessSolutions />
       <MethodologySection />
-      
-
-     
-
+      <GlobalLeader />
+      <StatsSection />
+      <CaseStudies />
       <GetStarted />
     </div>
   );
