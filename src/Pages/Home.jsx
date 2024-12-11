@@ -6,19 +6,19 @@ import GlobalLeader from "../Components/GlobalLeader/GlobalLeader";
 import FeaturesSection from "../Components/Hero/FeaturesSection";
 import Hero from "../Components/Hero/Hero";
 import MethodologySection from "../Components/MethodologySection/MethodologySection";
+import StatsSection from "../Components/StatsSection/StatsSection";
 
 function Home() {
   return (
     <div>
       <Hero />
       <FeaturesSection />
-      <CaseStudies />
+      <AboutUs />
       <BusinessSolutions />
       <MethodologySection />
       <GlobalLeader />
-
-      <AboutUs />
-
+      <StatsSection/>
+      <CaseStudies />
       <GetStarted />
     </div>
   );
