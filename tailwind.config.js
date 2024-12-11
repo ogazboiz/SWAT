@@ -1,10 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",],
   theme: {
     extend: {
-      backgroundImage: {
-        'custom-purple': 'linear-gradient(135deg, #2a00ff, #b000ff)',
+      fontFamily: {
+        jost: ['"Jost"', "sans-serif"],
+      },
+      fontSize: {
+        nav: "16px",
+      },
+      lineHeight: {
+        nav: "80px",
       },
       container: {
         center: true,
