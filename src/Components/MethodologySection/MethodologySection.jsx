@@ -4,7 +4,7 @@ import Carousel from "../Carousel/Carousel";
 
 const MethodologySection = () => {
   return (
-    <div className="w-full lg:h-[1300px] bg-white">
+    <div className="w-full lg:h-[1120px] bg-white">
       {/* Header Section */}
       <div className="pt-[9%] lg:w-[1440px] px-7 mx-auto lg:px-0">
         <img
