@@ -43,11 +43,13 @@ const CaseStudies = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h5 className="text-sm uppercase tracking-wide text-gray-500 mb-2">Success in Action
-        <div className=" bottom-0 left-0 h-1 w-[20px] bg-red-500"></div>
-        </h5>
+      <h5 className=" mx-auto text-[12.59px] uppercase font-inter text-[#7E689A] mb-2">
+  Success in Action
+  <span className="ml-2 h-[2px] w-[60px] bg-red-500"></span>
+</h5>
+
         
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+        <h2 className="text-[30px]   font-inter leading-[58px] font-semibold mb-8 ">
           Explore In-Depth Case Studies Highlighting <br />
           The Tangible Results Of Our Consulting Services
         </h2>

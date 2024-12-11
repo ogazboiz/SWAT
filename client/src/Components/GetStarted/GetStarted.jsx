@@ -19,7 +19,7 @@ const GetStarted = () => {
       <div className="relative top-12  mx-auto grid grid-cols-1  items-center md:justify-between w-[100%]">
         {/* Text Section */}
         <div className="  w-full text-center md:text-left space-y-4  lg:w-[47%] md:-[100%]">
-          <h2 className="text-[40.65px] font-sans font-semibold  text-[#FFFFFF] leading-[58.5px]">
+          <h2 className="text-[40.65px] font-sanss font-semibold  text-[#FFFFFF] leading-[58.5px]">
             Let Us Discuss Your Business Goals & Create A Standard Application Today
           </h2>
         </div>
