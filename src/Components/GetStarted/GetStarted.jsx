@@ -11,9 +11,12 @@ const GetStarted = () => {
       backgroundPosition: "center",
     }}
     >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-purple-900 opacity-60"></div>
     <div className=" w-[100%]   py-10 md:py-20 px-5 md:px-10">
       {/* Background Overlay */}
-      <div className="absolute inset-"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-900  to-90% opacity-5 "></div>
 
       {/* Content */}
       <div className="relative top-12  mx-auto grid grid-cols-1  items-center md:justify-between w-[100%]">
