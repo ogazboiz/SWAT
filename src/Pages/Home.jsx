@@ -13,10 +13,11 @@ function Home() {
       <Hero />
       <FeaturesSection />
       <AboutUs />
+      <GlobalLeader />
       <CaseStudies />
       <BusinessSolutions />
       <MethodologySection />
-      <GlobalLeader />
+      
 
      
 

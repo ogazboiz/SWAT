@@ -41,7 +41,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className=" w-[100%] py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
       <h5 className=" mx-auto text-[12.59px] uppercase font-inter text-[#7E689A] mb-2">
   Success in Action

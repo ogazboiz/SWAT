@@ -5,7 +5,7 @@ import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 const AboutUs = () => {
   return (
     <section className="w-full bg-white" >
-    <div className=" w-[90%] md:w-full mx-auto flex flex-col  md:flex-row items-center gap-10  sm:px-10 lg:px-20 md:py-12 px-0">
+    <div className=" w-[90%] md:w-full mx-auto flex flex-col   md:flex-row items-center gap-10  sm:px-10 lg:px-20 md:py-12 px-0">
         
       {/* Left Section */}
       <div className="relative lg:w-[55%]  h-[540px] w-[100%]">
@@ -13,7 +13,7 @@ const AboutUs = () => {
         <img
           src={aboutpic}
           alt="Main"
-          className="w-[100%] h-full"
+          className=" sm:w- w-[100%] h-full"
         />
         {/* Secondary Image */}
         <div className="relative lg:bottom-[18rem]  bottom-[20rem] h-[350px]  lg:left-[58%]  left-[38%]  md:left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
