@@ -16,7 +16,7 @@ const AboutUs = () => {
           className=" sm:w- w-[100%] h-full"
         />
         {/* Secondary Image */}
-        <div className="relative lg:bottom-[18rem]  bottom-[20rem] h-[350px]  lg:left-[58%]  left-[40%]  md:left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
+        <div className="relative lg:bottom-[18rem]  bottom-[20rem] h-[350px]  lg:left-[58%]  left-[44%]  md:left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
           <img
             src={aboutpic2}
             alt="Secondary"
