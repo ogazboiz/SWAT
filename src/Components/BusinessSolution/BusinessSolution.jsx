@@ -110,13 +110,16 @@ const BusinessSolutions = () => {
             "linear-gradient(to bottom, #673AB7 100%, #673AB721 13%) ",
         }}
       ></div>
-      <div className="relative z-10 px-4  py-16 lg:w-[1440px] mx-auto lg:px-0">
+      <div className="relative z-10 px-5  py-16 2xl:w-[1440px] mx-auto 2xl:px-0">
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row justify-between text-left lg:w-[1440px] lg:items-center pt-9">
+        <div className="flex flex-col justify-between text-left lg:flex-row lg:items-center pt-9">
           <div className="">
-            <h4 className="tracking-wide uppercase font-sanss font-[600] text-[12.49px] leading-[16.9px]">
-              Consulting Solutions
-            </h4>
+          <div className="flex items-center gap-5">
+              <h4 className="tracking-wide uppercase font-sanss font-[600] text-[12.49px] leading-[16.9px] text-[#DBE4EE] ">
+                Consulting Solutions
+              </h4>
+              <div className="border-[2px] w-[85.16px]  outline-none border-[#EC0112]"></div>
+            </div>
             <h1 className="mt-[30px] font-sanss text-[25px] font-[600] lg:text-[45px] leading-[58.5px] ">
               We've Got Your Business Covered
             </h1>
@@ -127,7 +130,7 @@ const BusinessSolutions = () => {
         </div>
 
         {/* Grid Section */}
-        <div className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 lg:relative lg:-translate-y-[5%] lg:w-[1440px]">
+        <div className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 lg:relative lg:-translate-y-[5%] 2xl:w-[1440px]">
           {/* Map through the services array */}
           {services.map((service, index) => (
             <div
@@ -137,7 +140,7 @@ const BusinessSolutions = () => {
                 selectedService === index
                   ? "bg-[#673AB7] text-white"
                   : service.bgColor
-              } p-6 flex flex-col items-start lg:w-[460.21px] lg:h-[317.5px] cursor-pointer transition-colors duration-300 lg:pl-[50px] border-b-4 border-[#EC0112]`}
+              } p-6 flex flex-col items-start 2xl:w-[460.21px] lg:h-[317.5px] cursor-pointer transition-colors duration-300 2xl:pl-[50px] border-b-4 border-[#EC0112]`}
             >
               {/* Icon */}
               <div className="mb-3 pt-[49.2px] ">
