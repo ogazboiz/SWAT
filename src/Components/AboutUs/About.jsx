@@ -5,10 +5,10 @@ import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 const AboutUs = () => {
   return (
     <section className="w-full bg-white" >
-    <div className=" w-[90%] mx-auto flex flex-col md:flex-row items-center gap-10 px-5 sm:px-10 lg:px-20 py-16 ">
+    <div className=" w-[90%] md:w-full mx-auto flex flex-col  md:flex-row items-center gap-10 px-5 sm:px-10 lg:px-20 md:py-12 py-16 ">
         
       {/* Left Section */}
-      <div className="relative lg:w-[55%]  h-[540px] w-full">
+      <div className="relative lg:w-[55%]  h-[540px] w-[100%]">
         {/* Main Image */}
         <img
           src={aboutpic}
@@ -16,7 +16,7 @@ const AboutUs = () => {
           className="w-[100%] h-full"
         />
         {/* Secondary Image */}
-        <div className="relative lg:bottom-[18rem]  bottom-[15rem]  lg:left-[58%]   left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
+        <div className="relative lg:bottom-[18rem]  bottom-[20rem] h-[350px]  lg:left-[58%]   left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
           <img
             src={aboutpic2}
             alt="Secondary"
@@ -24,7 +24,7 @@ const AboutUs = () => {
           />
           
         </div>
-        <div className="absolute -bottom-[1.6rem] lg:right-[12rem]   right-[4rem] w-[180px] lg:w-[244px] h-[178px] bg-purple-700 text-white text-center shadow-md flex flex-col items-center justify-center">
+        <div className="absolute -bottom-[1.6rem] lg:right-[12rem]   right-[6rem] w-[170px] lg:w-[244px] h-[178px] bg-purple-700 text-white text-center shadow-md flex flex-col items-center justify-center">
   <p className="text-[54px] sm:text-3xl leading-[70px] font-semibold">10+</p>
   <p className="text-sm sm:text-base">Happy Clients</p>
 </div>
@@ -32,7 +32,7 @@ const AboutUs = () => {
       </div>
 
       {/* Right Section */}
-      <div className="lg:w-[70%]  w-[140%] relative lg:-right-8  left-16 text-gray-800">
+      <div className="lg:w-[70%]  w-full md:w-[140%] relative lg:-right-8   md:h-[60%]  h-full md:left-16 text-gray-800">
         <p className="text-red-500 uppercase font-bold text-sm tracking-wide mb-2">
           About Us
         </p>
