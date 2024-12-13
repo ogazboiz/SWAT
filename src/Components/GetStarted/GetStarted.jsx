@@ -27,12 +27,13 @@ const GetStarted = () => {
       <div className="relative z-10 flex flex-col space-y-6 md:text-left md:items-start lg:ml-0 lg:w-[1440px] lg:justify-start py-5">
         {/* Text Section */}
         <h2 className="lg:text-[44.65px] text-[24.65px] font-sans font-semibold text-white leading-[1.4] lg:w-[601px] lg:pb-[50px]">
-          Let Us Discuss Your Business <br/> Goals & Create A Standard <br/> Application
-          Today
+          Let Us Discuss Your Business <br /> Goals & Create A Standard <br />{" "}
+          Application Today
         </h2>
 
         {/* Button Section */}
-        <button className="bg-red-600 hover:bg-red-700 text-white text-[16px] font-sans font-medium py-4 px-12 flex items-center space-x-2 rounded-md">
+
+        <button className="flex items-center justify-center px-6 py-3 font-medium text-white transition bg-[#EC0112]  w-[186.09px] h-[54.4px] hover:bg-red-600">
           <span>Get Started</span>
           <FaArrowRight className="text-white" />
         </button>

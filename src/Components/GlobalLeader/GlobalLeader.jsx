@@ -2,6 +2,7 @@ import React from "react";
 import bg from "../../Assets/Images/lastbg.png";
 import grd from "../../Assets/Images/Gradiente.png";
 import vd from "../../Assets/Images/videi.png";
+import { FaPlay } from "react-icons/fa";
 
 const GlobalLeader = () => {
   return (
@@ -35,7 +36,7 @@ const GlobalLeader = () => {
             Global Leaders Come To Us To Solve Industry-Defining Challenges
             Across All Industries
           </h1>
-          <button className="flex items-center px-6 py-3 font-medium text-white transition bg-red-500 rounded-md hover:bg-red-600">
+          <button className="flex items-center justify-center px-6 py-3 font-medium text-white transition bg-[#EC0112]  w-[186.09px] h-[54.4px] hover:bg-red-600">
             Learn More <span className="ml-2">&rarr;</span>
           </button>
 
@@ -49,9 +50,9 @@ const GlobalLeader = () => {
             />
 
             {/* Video Thumbnail Play Button */}
-            <div className="absolute flex items-center justify-center w-16 h-16 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 left-1/2">
-              <button className="text-3xl text-[#673AB7] md:text-4xl">
-                &#9654; {/* Play Button */}
+            <div className="absolute flex items-center justify-center w-[70px] h-[70px] transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 left-1/2">
+              <button className=" md:text-4xl">
+                <FaPlay className="flex justify-center text-3xl text-[#673AB7]"/>
               </button>
             </div>
           </div>

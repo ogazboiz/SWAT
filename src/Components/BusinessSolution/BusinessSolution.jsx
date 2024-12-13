@@ -19,8 +19,8 @@ const BusinessSolutions = () => {
       title: "Strategic Communication",
       description: (
         <>
-          Delivering clear, compelling messaging that <br /> aligns with your
-          goals and resonates with <br /> stakeholders.
+          Delivering clear, compelling messaging that aligns with your
+          goals and resonates with stakeholders.
         </>
       ),
       link: "#",
@@ -34,8 +34,8 @@ const BusinessSolutions = () => {
       title: "Brand Strategy",
       description: (
         <>
-          Creating impactful brand narratives that <br /> strengthen identity
-          and connect with your <br /> target audience.
+          Creating impactful brand narratives that strengthen identity
+          and connect with your target audience.
         </>
       ),
       link: "#",
@@ -46,8 +46,8 @@ const BusinessSolutions = () => {
       title: "Digital Marketing",
       description: (
         <>
-          Empowering your brand with data-driven <br /> strategies to reach and
-          engage your <br /> audience online effectively.
+          Empowering your brand with data-driven strategies to reach and
+          engage your audience online effectively.
         </>
       ),
       link: "#",
@@ -58,8 +58,8 @@ const BusinessSolutions = () => {
       title: "Resource Planning (ERP)",
       description: (
         <>
-          Creating user-friendly and innovative mobile <br /> applications
-          tailored to enhance your <br /> business operations.
+          Creating user-friendly and innovative mobile applications
+          tailored to enhance your business operations.
         </>
       ),
       link: "#",
@@ -70,8 +70,8 @@ const BusinessSolutions = () => {
       title: "Corporate Growth Strategy",
       description: (
         <>
-          Building responsive, high-performance <br /> websites that deliver
-          exceptional user <br /> experiences and drive growth.
+          Building responsive, high-performance websites that deliver
+          exceptional user experiences and drive growth.
         </>
       ),
       link: "#",
@@ -82,8 +82,8 @@ const BusinessSolutions = () => {
       title: "Social Media Marketing",
       description: (
         <>
-          Crafting impactful campaigns to boost brand <br /> visibility and
-          foster meaningful connections <br /> on social platforms.
+          Crafting impactful campaigns to boost brand visibility and
+          foster meaningful connections  on social platforms.
         </>
       ),
       link: "#",
@@ -124,7 +124,7 @@ const BusinessSolutions = () => {
               We've Got Your Business Covered
             </h1>
           </div>
-          <button className="px-[35.8px] py-[16.8px]  text-white transition font-[500] text-[16px] bg-[#EC0112]  hover:bg-red-700">
+          <button className="px-[35.8px] py-[16.8px] w-[189.2px]  h-[54.4px]  text-white transition font-[500] text-[16px] bg-[#EC0112]  hover:bg-red-700">
             Discover All →
           </button>
         </div>
@@ -157,7 +157,7 @@ const BusinessSolutions = () => {
                 {service.title}
               </h2>
               {/* Description */}
-              <p className="mt-2 text-[15px] lg:text-[15px] font-[300] font-sanss leading-[24px] tracking-wide">
+              <p className="mt-2 text-[15px] lg:text-[15px] font-[300] font-sanss leading-[24px] tracking-wide w-[310px]">
                 {service.description}
               </p>
               {/* Link */}
