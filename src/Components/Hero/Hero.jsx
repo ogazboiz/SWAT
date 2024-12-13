@@ -9,14 +9,14 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 mx-auto lg:w-[90%] lg:px-8 text-white">
-      <div className="flex items-center justify-center mb-6 lg:justify-start">
+      <div className="flex items-center justify-center lg:mb-6 lg:justify-start">
           <span className="text-[12.7px] font-semibold font-sanss leading-4 tracking-wider uppercase">
             Unlock Your Business Potential
           </span>
           <span className="ml-3 h-0.5 w-16 bg-red-500"></span>
         </div>
 
-        <h1 className="text-4xl font-sanss  lg:text-7xl font-bold leading-[71.5px] mb-6">
+        <h1 className="text-4xl font-sanss  lg:text-7xl font-bold leading-snug lg:leading-[71.5px] mb-6">
           Strategy + <br />
           Technology = <br />
           <span >Endless Solution</span>

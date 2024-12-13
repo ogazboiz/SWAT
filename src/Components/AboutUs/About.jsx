@@ -45,9 +45,13 @@ const AboutUs = () => {
             sectors develop and execute winning strategies and Technology
             solutions”.
           </blockquote>
+          <div className="flex flex-row justify-center mb-2 lg:block lg:mb:0 ">
           <button className="px-4 py-2 text-sm font-bold text-white transition bg-red-500 shadow-md sm:py-3 sm:px-6 hover:bg-red-600">
             Learn More →
           </button>
+            
+          </div>
+          
         </div>
       </div>
     </section>

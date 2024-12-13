@@ -68,10 +68,7 @@ const Footer = () => {
 
           {/* Address and Contact */}
           <div className="font-sanss">
-            <h4 className="mb-4 text-lg font-semibold">Head Office Address</h4>
-            <p className="font-normal text-[15px] leading-[22.5px] text-white opacity-[83%] mb-4">
-              Apo Urban Market, Apo Resettlement Apo, FCT Abuja
-            </p>
+            
             <h4 className="mb-2 text-lg font-semibold">Contact Details</h4>
             <p className="font-normal text-[15px] leading-[22.5px] text-white opacity-[83%]">+2348034474677</p>
           </div>
@@ -83,7 +80,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="flex flex-col items-center justify-between text-sm lg:flex-row">
           <p className="text-center lg:text-left">
-            All Rights Reserved – Aided Designrr 2024 (C)
+            All Rights Reserved – SWAT 2024 (C)
           </p>
           <div className="flex mt-4 space-x-4 lg:mt-0">
             <a
