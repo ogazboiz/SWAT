@@ -21,7 +21,7 @@ const MethodologySection = () => {
               </h4>
               <div className="border-[2px] w-[85.16px]  outline-none border-[#EC0112]"></div>
             </div>
-            <h1 className="mt-[30px] font-sanss font-[600] lg:text-[45px] leading-[58.5px] w-[610px] ">
+            <h1 className="mt-[30px] font-sanss font-[600] lg:text-[45px] leading-[58.5px] lg:w-[610px] ">
               Our Methodology For Delivering Results
             </h1>
           </div>
