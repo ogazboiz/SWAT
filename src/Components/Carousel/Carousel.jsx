@@ -8,17 +8,17 @@ const Carousel = () => {
   const cards = [
     {
       title: "Assess & Organize",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Evaluating and structuring resources for efficiency..",
       icon: <FaBullhorn className="text-4xl text-red-600" />,
     },
     {
       title: "Environmental Assessment",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: ".Analyzing external factors impacting success.",
       icon: <FaBullhorn className="text-4xl text-red-600" />,
     },
     {
       title: "Strategy Formulation",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Crafting actionable plans to achieve goals.",
       icon: <FaBullhorn className="text-4xl text-red-600" />,
     },
     {
