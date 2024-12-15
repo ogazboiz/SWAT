@@ -21,16 +21,16 @@ const Carousel = () => {
       description: "Crafting actionable plans to achieve goals.",
       icon: <FaBullhorn className="text-4xl text-red-600" />,
     },
-    {
-      title: "Business Planning",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: <FaBullhorn className="text-4xl text-red-600" />,
-    },
-    {
-      title: "Market Analysis",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: <FaBullhorn className="text-4xl text-red-600" />,
-    },
+    // {
+    //   title: "Business Planning",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   icon: <FaBullhorn className="text-4xl text-red-600" />,
+    // },
+    // {
+    //   title: "Market Analysis",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   icon: <FaBullhorn className="text-4xl text-red-600" />,
+    // },
   ];
 
   // Scroll carousel left and right
