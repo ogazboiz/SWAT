@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../../Assets/Images/getstarted.png";
-import grd from "../../Assets/Images/Gradientgetstart.png";
+import grd from "../../Assets/Images/Gradient.png";
 import { FaArrowRight } from "react-icons/fa";
 
 const GetStarted = () => {

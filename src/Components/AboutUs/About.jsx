@@ -14,7 +14,7 @@ const AboutUs = () => {
           <div className="relative lg:bottom-[18rem]  bottom-[20rem] h-[350px]  lg:left-[58%]  left-[40%]  md:left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
             <img src={aboutpic2} alt="Secondary" className="w-full h-full " />
           </div>
-          <div className="absolute -bottom-[1.6rem] lg:right-[12rem]   right-[6rem] w-[170px] lg:w-[244px] h-[178px] bg-purple-700 text-white text-center shadow-md flex flex-col items-center justify-center">
+          <div className="absolute -bottom-[1.6rem] lg:right-[12rem]   right-[6rem] w-[170px] lg:w-[244px] h-[178px] bg-[#150529] text-white text-center shadow-md flex flex-col items-center justify-center">
             <p className="text-[54px] sm:text-3xl leading-[70px] font-semibold">
               10+
             </p>
