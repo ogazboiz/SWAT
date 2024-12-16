@@ -5,7 +5,7 @@ import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 const AboutUs = () => {
   return (
     <section className="w-full bg-white">
-      <div className=" w-[90%] md:w-full mx-auto flex flex-col   md:flex-row items-center gap-10  sm:px-10 lg:px-20 md:py-12 px-0">
+      <div className=" w-[90%] md:w-full mx-auto flex flex-col   md:flex-row items-center gap-10  py-10 sm:px-10 lg:px-20 md:py-12  px-0">
         {/* Left Section */}
         <div className="relative lg:w-[55%]  h-[540px] w-[100%]">
           {/* Main Image */}
@@ -45,9 +45,13 @@ const AboutUs = () => {
             sectors develop and execute winning strategies and Technology
             solutions”.
           </blockquote>
+          <div className="flex flex-row justify-center mb-2 lg:block lg:mb:0 ">
           <button className="px-4 py-2 text-sm font-bold text-white transition bg-red-500 shadow-md sm:py-3 sm:px-6 hover:bg-red-600">
             Learn More →
           </button>
+            
+          </div>
+          
         </div>
       </div>
     </section>

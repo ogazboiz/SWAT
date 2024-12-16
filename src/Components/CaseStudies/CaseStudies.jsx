@@ -10,32 +10,32 @@ const CaseStudies = () => {
   const caseStudies = [
     {
       title: "Strategic Growth Initiative",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Driving business growth through innovative strategies.",
       image: case1,
     },
     {
       title: "Operational Efficiency",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Optimizing processes for maximum productivity",
       image: case2,
     },
     {
       title: "Expansion Strategy",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Planning for market and business growth..",
       image: case3,
     },
     {
       title: "Change Management",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Guiding seamless organizational transitions.",
       image: case4,
     },
     {
       title: "Development Program",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Building skills and fostering growth.",
       image: case5,
     },
     {
       title: "Customer Experience",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Delivering exceptional interactions and satisfaction.",
       image: case6,
     },
   ];

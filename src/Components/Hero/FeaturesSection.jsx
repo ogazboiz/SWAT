@@ -30,8 +30,8 @@ const FeaturesSection = () => {
       {/* Business Strategy Consultancy Card */}
       <div className="flex-1 lg:h-[184.8px] bg-red-500 flex flex-row justify-center items-center ">
         <div className=" w-[80%] flex flex-row justify-center items-center  text-white py-8 px-6 space-x-3  ">
-          <div className=" md:mx-auto mx-auto flex md:flex md:space-x-3 space-x-3 md:justify-center md:items-center md:flex-row flex-row ">
-            <span className="text-4xl">
+          <div className=" md:mx-auto mx-auto flex md:flex md:space-x-3 space-x-3 justify-center items-center lg:justify-center lg:items-center md:justify-center md:items-center md:flex-row flex-row ">
+            <span className="text-4xl ">
               <img
                 src={piechart}
                 alt="rocket icon"
