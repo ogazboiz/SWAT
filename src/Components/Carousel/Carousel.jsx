@@ -9,17 +9,17 @@ const Carousel = () => {
     {
       title: "Assess & Organize",
       description: "Evaluating and structuring resources for efficiency..",
-      icon: <FaBullhorn className="text-4xl text-red-600" />,
+      icon: <FaBullhorn className="text-4xl text-[#EC0112]" />,
     },
     {
       title: "Environmental Assessment",
       description: ".Analyzing external factors impacting success.",
-      icon: <FaBullhorn className="text-4xl text-red-600" />,
+      icon: <FaBullhorn className="text-4xl text-[#EC0112]" />,
     },
     {
       title: "Strategy Formulation",
       description: "Crafting actionable plans to achieve goals.",
-      icon: <FaBullhorn className="text-4xl text-red-600" />,
+      icon: <FaBullhorn className="text-4xl text-[#EC0112]" />,
     },
     // {
     //   title: "Business Planning",
@@ -90,7 +90,7 @@ const Carousel = () => {
               onClick={() => setActiveIndex(index)}
               className={`flex-shrink-0 snap-center lg:min-w-[458.21px] h-[164.8px] p-6 flex flex-col justify-between items-center ${
                 activeIndex === index
-                  ? "bg-purple-600 text-white"
+                  ? "bg-[#150529] text-white"
                   : "bg-white text-black"
               } border-b-4 border-[#EC0112] cursor-pointer transition duration-300 shadow-lg`}
             >
