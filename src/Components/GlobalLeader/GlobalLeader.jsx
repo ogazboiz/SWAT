@@ -52,7 +52,7 @@ const GlobalLeader = () => {
             {/* Video Thumbnail Play Button */}
             <div className="absolute flex items-center justify-center w-[70px] h-[70px] transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 left-1/2">
               <button className=" md:text-4xl">
-                <FaPlay className="flex justify-center text-3xl text-[#673AB7]"/>
+                <FaPlay className="flex justify-center text-3xl text-[#150529]"/>
               </button>
             </div>
           </div>

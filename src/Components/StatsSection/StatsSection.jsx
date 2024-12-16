@@ -3,7 +3,7 @@ import React from "react";
 const StatsSection = () => {
   return (
     <div className="w-full 2xl:h-[208px]">
-      <div className="relative py-12 text-white bg-[#673AB7] 2xl:w-[1440px] lg:w-[1150px] mx-auto lg:h-[208.4px]">
+      <div className="relative py-12 text-white bg-[#150529] 2xl:w-[1440px] lg:w-[1150px] mx-auto lg:h-[208.4px]">
         <div className="container flex items-center justify-around mx-auto">
           {/* Statistic Item */}
           <div className="text-center font-sanss lg:text-[54.14px]">

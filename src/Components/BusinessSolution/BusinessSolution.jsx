@@ -107,7 +107,7 @@ const BusinessSolutions = () => {
         className="absolute inset-0 opacity-50"
         style={{
           background:
-            "linear-gradient(to bottom, #673AB7 100%, #673AB721 13%) ",
+            "linear-gradient(to bottom,#150529 100%, #150529 13%) ",
         }}
       ></div>
       <div className="relative z-10 px-5  py-16 2xl:w-[1440px] mx-auto 2xl:px-0">
@@ -138,7 +138,7 @@ const BusinessSolutions = () => {
               onClick={() => setSelectedService(index)}
               className={`${
                 selectedService === index
-                  ? "bg-[#673AB7] text-white"
+                  ? "bg-[#150529] text-white"
                   : service.bgColor
               } p-6 flex flex-col items-start 2xl:w-[460.21px] lg:h-[317.5px] cursor-pointer transition-colors duration-300 2xl:pl-[50px] border-b-4 border-[#EC0112]`}
             >
