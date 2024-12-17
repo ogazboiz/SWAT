@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavLogo from "../../Assets/Images/navbar.png";
+import NavLogo from "../../Assets/Images/navbar.svg";
 import MoonIcon from "../../Assets/Icons/moon.png";
 import "./navbar.css";
 const Navbar = () => {
@@ -55,27 +55,25 @@ const Navbar = () => {
               className="text-white px-6 py-2 rounded-lg shadow hover:opacity-90 font-jost font-bold text-sm leading-9"
               style={{
                 background:
-                  "linear-gradient(91.55deg, #673AB7 45%, #4E415D 45%, #382550 75%, #EC0112 100%)",
+                  "linear-gradient(91.55deg, #150529 45%,  #4E415D 45%, #382550 75%, #EC0112 100%)",
               }}
             >
-              Hire Us
+              HIRE US
             </button>
             <button className= " px-4 py-4 rounded-full text-gray-700 hover:text-gray-900" style={{
                 background:
-                  "linear-gradient(91.55deg, #673AB7 45%, #4E415D 45%, #382550 75%, #EC0112 100%)",
+                  "linear-gradient(91.55deg, #150529 45%, #4E415D 45%, #382550 75%, #EC0112 100%)",
               }}><img src={MoonIcon} alt="moon icon" className="w-[18px] h-[18px]  " /></button>
           </div>
         </nav>
 
-        {/* Buttons */}
 
         {/* Mobile Menu Button */}
-        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 hover:text-gray-900 text-2xl p-2 rounded-lg border border-gray-300"
+          className="md:hidden text-gray-700 hover:text-gray-900 text-2xl p-2 rounded-lg"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? "✖" : "☰"}
+          {isMenuOpen ? "✖" : " ☰"}
         </button>
       </div>
 

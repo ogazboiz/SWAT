@@ -1,5 +1,5 @@
 import React from "react";
-import swat from "../../Assets/Images/Swat.png";
+import swat from "../../Assets/Images/swat.svg";
 import { GoTriangleRight } from "react-icons/go";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -7,12 +7,12 @@ import { FaYoutube } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <footer className="py-10 text-white bg-[#673AB7] w-full lg:h-[469px]">
+    <footer className="py-10 text-white bg-[#150529] w-full lg:h-[469px]">
       <div className="container px-6 mx-auto  lg:w-[1440px] pt-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:gap-4" >
           {/* Logo and About Section */}
           <div className="col-span-1 lg:w-[110%]">
-            <div className="mb-4">
+            <div className="mb-4 ml-[-25px]">
               <img src={swat} alt="SWAT Logo" className="h-[70px] w-[166.26px]" />
             </div>
             <p className="text-[13px] text-start font-light leading-5 font-jost ">
