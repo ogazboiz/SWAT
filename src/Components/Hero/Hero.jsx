@@ -1,5 +1,5 @@
 import React from "react";
-import Bg from "../../Assets/Images/herohesa.png";
+import Bg from "../../Assets/Images/Container.png";
 import phone from "../../Assets/Icons/phone.png";
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
           <span className="text-[12.7px] font-semibold font-sanss leading-4 tracking-wider uppercase">
             Unlock Your Business Potential
           </span>
-          <span className="ml-3 h-0.5 w-16 bg-red-500"></span>
+          <span className="ml-3 h-0.5 w-16 bg-[#Ec0112]"></span>
         </div>
 
         <h1 className="text-4xl font-sanss  lg:text-7xl font-bold leading-snug lg:leading-[71.5px] mb-6">
@@ -29,7 +29,7 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col space-y-4 font-sans sm:flex-row sm:items-center sm:space-y-0 sm:space-x-6">
-          <button className="px-8 py-3 text-sm text-white bg-red-500 shadow-md hover:bg-red-600 lg:text-base">
+          <button className="px-8 py-3 text-sm text-white bg-[#Ec0112] shadow-md hover:bg-red-600 lg:text-base">
             Learn More →
           </button>
           <a href="tel:+2348034474677" className="flex items-center text-sm font-medium lg:text-base">
