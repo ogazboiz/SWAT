@@ -32,7 +32,7 @@ const GlobalLeader = () => {
             Global Leaders Come To Us To Solve <br /> Industry-Defining Challenges <br />
             Across All Industries
           </h1>
-          <h1 className="text-3xl font-semibold md:text-4xl lg:text-[45px] leading-[58.5px]  font-sanss pb-6 lg:hidden">
+          <h1 className="text-3xl font-semibold md:text-4xl lg:text-[45px] leading-[35.5px]  font-sanss pb-6 lg:hidden">
             Global Leaders Come To Us To Solve Industry-Defining Challenges
             Across All Industries
           </h1>
