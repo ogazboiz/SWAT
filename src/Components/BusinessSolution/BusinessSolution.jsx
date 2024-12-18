@@ -108,7 +108,7 @@ const BusinessSolutions = () => {
           background: "linear-gradient(to bottom,#150529 100%, #150529 13%) ",
         }}
       ></div>
-      <div className="relative z-10 px-5 lg:pt-[110px] mx-auto max-w-[1280px]">
+      <div className="relative z-10 px-5 lg:pt-[110px] mx-auto max-w-[1280px] py-6">
         {/* Header Section */}
         <div className="flex flex-col justify-between text-left lg:flex-row lg:items-center pt-9">
           <div>
