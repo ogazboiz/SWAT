@@ -79,7 +79,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="flex flex-col items-center justify-between text-sm lg:flex-row">
-          <p className="text-center lg:text-left">
+          <p className="text-center font-sanss text-base font-medium lg:text-left">
             All Rights Reserved – SWAT 2024 (C)
           </p>
           <div className="flex mt-4 space-x-4 lg:mt-0">

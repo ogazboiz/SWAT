@@ -14,12 +14,12 @@ const FeaturesSection = () => {
 
       {/* Research & Development Card */}
       <div className="flex-1 lg:h-[184.8px] bg-[#320D46] flex lg:flex-row justify-center items-center  text-white py-8 px-6 space-x-3 ">
-        <div className=" md:mx-auto mx-auto flex md:flex md:space-x-3 space-x-3 md:justify-center md:items-center md:flex-row flex-row ">
-          <span className="text-4xl">
+        <div className=" w-[60%] lg:w-[80%] flex md:flex md:space-x-3 space-x-3 justify-center items-center md:justify-center md:items-center md:flex-row flex-row ">
+          <span className="text-4xl justify-center">
             {" "}
-            <img src={rocket} alt="rocket icon" className="w-[35px] h-[35px]" />
+            <img src={rocket} alt="rocket icon" className="lg:w-full lg:h-full" />
           </span>
-          <span className="lg:w-[50%] sm:w-[50%]">
+          <span className="lg:w-[50%] text-center">
             <h2 className="text-xl font-sanss font-semibold">
               Research & Development
             </h2>
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
 
       {/* Business Strategy Consultancy Card */}
       <div className="flex-1 lg:h-[184.8px] bg-[#EC0112]  flex flex-row justify-center items-center ">
-        <div className=" w-[80%] flex flex-row justify-center items-center  text-white py-8 px-6 space-x-3  ">
+        <div className=" w-[70%] lg:w-[80%] flex flex-row justify-center items-center  text-white py-8 px-6 space-x-3  ">
           <div className=" md:mx-auto mx-auto flex md:flex md:space-x-3 space-x-3 justify-center items-center lg:justify-center lg:items-center md:justify-center md:items-center md:flex-row flex-row ">
             <span className="text-4xl ">
               <img
@@ -38,7 +38,7 @@ const FeaturesSection = () => {
                 className="lg:w-full lg:h-full"
               />
             </span>
-            <span className="">
+            <span className="text-center">
               {" "}
               <h2 className="text-xl font-semibold">
                 Business Strategy Consultancy
