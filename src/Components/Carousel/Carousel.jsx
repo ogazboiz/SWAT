@@ -66,13 +66,13 @@ const Carousel = () => {
       <div className="justify-end hidden gap-2 px-8 mb-4 lg:flex md:flex">
         <button
           onClick={() => scroll("left")}
-          className="p-2 text-[#222222] bg-[#E6E7E9] hover:bg-gray-300 h-[35px] w-[35px] flex items-center justify-center rounded-s-md"
+          className="p-2 text-[#222222] bg-[#E6E7E9] hover:bg-gray-300 h-[35px] w-[35px] flex items-center justify-center rounded-sm"
         >
           <FaArrowLeft />
         </button>
         <button
           onClick={() => scroll("right")}
-          className="p-2 text-white bg-[#EC0112] hover:bg-gray-300 h-[35px] w-[35px] flex items-center justify-center rounded-e-md"
+          className="p-2 text-white bg-[#EC0112] hover:bg-gray-300 h-[35px] w-[35px] flex items-center justify-center rounded-sm"
         >
           <FaArrowRight />
         </button>

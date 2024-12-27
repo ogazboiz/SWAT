@@ -52,7 +52,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <button
-              className="text-white px-6 py-2 rounded-lg shadow hover:opacity-90 font-jost font-bold text-sm leading-9"
+              className="text-white px-6 py-[1.5px] rounded-lg shadow hover:opacity-90 font-jost font-bold text-sm leading-9"
               style={{
                 background:
                   "linear-gradient(91.55deg, #150529 45%,  #4E415D 45%, #382550 75%, #EC0112 100%)",
@@ -60,7 +60,7 @@ const Navbar = () => {
             >
               HIRE US
             </button>
-            <button className= " px-4 py-4 rounded-full text-gray-700 hover:text-gray-900" style={{
+            <button className= " px-[9px] py-[9px] rounded-full text-gray-700 hover:text-gray-900" style={{
                 background:
                   "linear-gradient(91.55deg, #150529 45%, #4E415D 45%, #382550 75%, #EC0112 100%)",
               }}><img src={MoonIcon} alt="moon icon" className="w-[18px] h-[18px]  " /></button>

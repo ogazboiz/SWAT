@@ -1,4 +1,16 @@
+.section {
+  width: 100%; /* Use full screen width */
+  max-width: 1440px; /* Section doesn't stretch beyond 1440px */
+  margin: 0 auto; /* Center the section on larger screens */
+  padding: 0 16px; /* Add space on the left and right for smaller screens */
+  box-sizing: border-box; /* Padding won't add extra size */
+}
 
+.container {
+  width: 100%; /* Fills available space */
+  max-width: 1280px; /* Content stops at 1280px */
+  margin: 0 auto; /* Center the container */
+}
 
 
 .App {

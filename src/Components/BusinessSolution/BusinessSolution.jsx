@@ -1,16 +1,13 @@
 import {
-  FaBullhorn,
-  FaChartLine,
-  FaMobileAlt,
-  FaBriefcase,
-  FaFacebook,
-  FaDigitalTachograph,
-  FaSearchPlus,
-} from "react-icons/fa";
+  BrainCircuit,
+  Target,
+  BarChart3,
+  Search,
+  CircleDot,
+  Settings,
+} from "lucide-react";
 import bg from "../../Assets/Images/businnesbg.png";
 import React, { useState } from "react";
-//   import {ReactComponent as One} from "../../Assets/Vector/one.svg";
-//   import one from "../../Assets/Vector/one.svg";
 
 const BusinessSolutions = () => {
   // Array of card data with icons
@@ -19,52 +16,49 @@ const BusinessSolutions = () => {
       title: "Strategic Communication",
       description: (
         <>
-          Delivering clear, compelling messaging that aligns with your
-          goals and resonates with stakeholders.
+          Delivering clear, compelling messaging that aligns with your goals and
+          resonates with stakeholders.
         </>
       ),
       link: "#",
-      bgColor: "bg-white text-black",
-      icon: <FaBullhorn className="text-4xl text-red-600" />,
-
-      // icon: <img src={one} alt="one" className="text-4xl" style={{fill : "red"}} />,
-      // icon: <One className="text-4xl" style={{ fill: 'red' }}   />,
+      bgColor: "bg-[#150529] text-white", // Set the first card as purple
+      icon: <BrainCircuit className="text-red-600 text-7xl" />,
     },
     {
       title: "Brand Strategy",
       description: (
         <>
-          Creating impactful brand narratives that strengthen identity
-          and connect with your target audience.
+          Creating impactful brand narratives that strengthen identity and
+          connect with your target audience.
         </>
       ),
       link: "#",
       bgColor: "bg-white text-black",
-      icon: <FaChartLine className="text-4xl text-red-600" />,
+      icon: <Target className="text-4xl text-red-600" />,
     },
     {
       title: "Digital Marketing",
       description: (
         <>
-          Empowering your brand with data-driven strategies to reach and
-          engage your audience online effectively.
+          Empowering your brand with data-driven strategies to reach and engage
+          your audience online effectively.
         </>
       ),
       link: "#",
       bgColor: "bg-white text-black",
-      icon: <FaSearchPlus className="text-4xl text-red-600" />,
+      icon: <BarChart3 className="text-4xl text-red-600" />,
     },
     {
       title: "Resource Planning (ERP)",
       description: (
         <>
-          Creating user-friendly and innovative mobile applications
-          tailored to enhance your business operations.
+          Creating user-friendly and innovative mobile applications tailored to
+          enhance your business operations.
         </>
       ),
       link: "#",
       bgColor: "bg-white text-black",
-      icon: <FaSearchPlus className="text-4xl text-red-600" />,
+      icon: <Search className="text-4xl text-red-600" />,
     },
     {
       title: "Corporate Growth Strategy",
@@ -76,23 +70,28 @@ const BusinessSolutions = () => {
       ),
       link: "#",
       bgColor: "bg-white text-black",
-      icon: <FaBriefcase className="text-4xl text-red-600" />,
+      icon: <CircleDot className="text-4xl text-red-600" />,
     },
     {
       title: "Social Media Marketing",
       description: (
         <>
-          Crafting impactful campaigns to boost brand visibility and
-          foster meaningful connections  on social platforms.
+          Crafting impactful campaigns to boost brand visibility and foster
+          meaningful connections on social platforms.
         </>
       ),
       link: "#",
       bgColor: "bg-white text-black",
-      icon: <FaFacebook className="text-4xl text-red-600" />,
+      icon: <Settings className="text-4xl text-red-600" />,
     },
   ];
 
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState(0); // Default to first service selected
+
+  // Function to handle scroll to top
+  const handleScroll = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div
@@ -106,50 +105,53 @@ const BusinessSolutions = () => {
       <div
         className="absolute inset-0 opacity-50"
         style={{
-          background:
-            "linear-gradient(to bottom,#150529 100%, #150529 13%) ",
+          background: "linear-gradient(to bottom,#150529 100%, #150529 13%) ",
         }}
       ></div>
-      <div className="relative z-10 px-5  py-16 2xl:w-[1440px] mx-auto 2xl:px-0">
+      <div className="relative z-10 px-5 lg:pt-[110px] mx-auto max-w-[1280px] py-6">
         {/* Header Section */}
         <div className="flex flex-col justify-between text-left lg:flex-row lg:items-center pt-9">
-          <div className="">
-          <div className="flex items-center gap-5">
-              <h4 className="tracking-wide uppercase font-sanss font-[600] text-[12.49px] leading-[16.9px] text-[#DBE4EE] ">
+          <div>
+            <div className="flex items-center gap-5">
+              <h4 className="tracking-wide uppercase font-sanss font-[600] text-[12.49px] leading-[16.9px] text-[#DBE4EE]">
                 Consulting Solutions
               </h4>
-              <div className="border-[2px] w-[85.16px]  outline-none border-[#EC0112]"></div>
+              <div className="border-[2px] w-[85.16px] outline-none border-[#EC0112]"></div>
             </div>
             <h1 className="mt-[30px] font-sanss text-[25px] font-[600] lg:text-[45px] leading-[58.5px] ">
               We've Got Your Business Covered
             </h1>
           </div>
-          <button className="px-[35.8px] py-[16.8px] w-[189.2px]  h-[54.4px]  text-white transition font-[500] text-[16px] bg-[#EC0112]  hover:bg-red-700">
+          <button className="px-[35.8px] py-[16.8px] w-[189.2px] h-[54.4px] text-white transition font-[500] text-[16px] bg-[#EC0112] hover:bg-red-700">
             Discover All →
           </button>
         </div>
 
         {/* Grid Section */}
-        <div className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 lg:relative lg:-translate-y-[5%] 2xl:w-[1440px]">
+        <div className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 lg:relative lg:-translate-y-[5%]">
           {/* Map through the services array */}
           {services.map((service, index) => (
             <div
               key={index}
-              onClick={() => setSelectedService(index)}
+              onClick={() => {
+                setSelectedService(index); // Scroll to the top on card click
+              }}
               className={`${
-                selectedService === index
+                selectedService === index || index === 0
                   ? "bg-[#150529] text-white"
-                  : service.bgColor
-              } p-6 flex flex-col items-start 2xl:w-[460.21px] lg:h-[317.5px] cursor-pointer transition-colors duration-300 2xl:pl-[50px] border-b-4 border-[#EC0112]`}
+                  : "bg-white text-black"
+              } p-6 flex flex-col items-start max-w-[407.21px] max-h-[317.5px] cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:bg-[#150529] hover:text-white border-b-4 border-[#EC0112] group`}
             >
               {/* Icon */}
-              <div className="mb-3 pt-[49.2px] ">
+              <div className="mb-3 pt-[49.2px]">
+                {/* Apply group-hover to change icon color */}
                 {React.cloneElement(service.icon, {
-                  className: `${
-                    selectedService === index
+                   size: selectedService === index ? 40 : 40,
+                  className: `text-9xl transition-colors duration-300 ${
+                    selectedService === index || index === 0
                       ? "text-white"
-                      : service.icon.props.className
-                  }  text-4xl`,
+                      : "text-red-600 group-hover:text-white"
+                  }`,
                 })}
               </div>
               {/* Title */}
