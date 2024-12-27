@@ -1,4 +1,5 @@
 import AboutUs from "../Components/AboutUs/About";
+import AboutSection from "../Components/AboutUs/AboutUs";
 import BusinessSolutions from "../Components/BusinessSolution/BusinessSolution";
 import CaseStudies from "../Components/CaseStudies/CaseStudies";
 import GetStarted from "../Components/GetStarted/GetStarted";
@@ -19,6 +20,7 @@ function Home() {
       <GlobalLeader />
       <StatsSection />
       <CaseStudies />
+      <AboutSection/>
       <GetStarted />
     </div>
   );

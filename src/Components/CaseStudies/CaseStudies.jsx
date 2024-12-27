@@ -52,18 +52,18 @@ const CaseStudies = () => {
           Explore In-Depth Case Studies Highlighting <br />
           The Tangible Results Of Our Consulting Services
         </h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {caseStudies.map((study, index) => (
             <div
               key={index}
-              className="relative lg:w-[387px]  h-[420px]  overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              className="relative lg:w-[387px]  h-[420px]  overflow-hidden  transition-shadow duration-300"
             >
               <img
                 src={study.image}
                 alt={study.title}
                 className="w-full h-[60%] object-cover"
               />
-              <div className="mx-auto  -top-9 relative w-[270px] h-[190px] bg-white">
+              <div className="mx-auto  hover:shadow-lg hover:bg-slate-800 -top-9 relative w-[270px] h-[190px] bg-white">
                 <div className="w-[90%] top-5 relative">
                   <h3 className="mb-2 text-lg font-semibold">{study.title}</h3>
                   <p className="mb-4 text-gray-600">{study.description}</p>

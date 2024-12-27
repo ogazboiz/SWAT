@@ -4,54 +4,78 @@ import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 
 const AboutUs = () => {
   return (
-    <section className="w-full bg-white">
-      <div className=" w-[90%] md:w-full mx-auto flex flex-col   md:flex-row items-center gap-10  py-10 sm:px-10 lg:px-20 md:py-12  px-0">
-        {/* Left Section */}
-        <div className="relative lg:w-[55%]  h-[540px] w-[100%]">
+    <section className="container mx-auto px-4 py-16 md:py-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        {/* Left Section - Images */}
+        <div className="relative">
           {/* Main Image */}
-          <img src={aboutpic} alt="Main" className=" sm:w- w-[100%] h-full" />
-          {/* Secondary Image */}
-          <div className="relative lg:bottom-[18rem]  bottom-[20rem] h-[350px]  lg:left-[58%]  left-[40%]  md:left-[60%] bg-white p-3 w-[220px]  lg:h-[320px] lg:w-[280px]">
-            <img src={aboutpic2} alt="Secondary" className="w-full h-full " />
+          <div className="relative z-10">
+            <img
+              src={aboutpic}
+              alt="Main"
+              className="w-full h-auto rounded-lg object-cover"
+            />
           </div>
-          <div className="absolute -bottom-[1.6rem] lg:right-[12rem]   right-[6rem] w-[170px] lg:w-[244px] h-[178px] bg-[#150529] text-white text-center shadow-md flex flex-col items-center justify-center">
-            <p className="text-[54px] sm:text-3xl leading-[70px] font-semibold">
-              10+
-            </p>
-            <p className="text-sm sm:text-base">Happy Clients</p>
+          
+          {/* Secondary Image - Overlapped */}
+          <div className="absolute top-1/2 -right-12 z-20 w-2/3 bg-white p-3 rounded-lg shadow-lg transform -translate-y-1/4">
+            <img
+              src={aboutpic2}
+              alt="Secondary"
+              className="w-full h-auto rounded-lg object-cover"
+            />
+          </div>
+
+          {/* Counter Box */}
+          <div className="absolute -bottom-12 right-16 z-30 bg-[#150529] text-white p-8 rounded-lg shadow-xl">
+            <div className="text-center">
+              <p className="text-5xl font-bold mb-1">
+                10<sup className="text-xl">+</sup>
+              </p>
+              <p className="text-sm">Happy Clients</p>
+            </div>
           </div>
         </div>
 
-        {/* Right Section */}
-        <div className="lg:w-[70%]  w-full md:w-[140%] relative lg:-right-8   md:h-[60%]  h-full md:left-16 text-gray-800">
-          <p className="mb-2 text-sm font-bold tracking-wide text-red-500 uppercase">
-            About Us
-          </p>
-          <h2 className="mb-5 text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl">
+        {/* Right Section - Content */}
+        <div className="lg:pl-8 pt-16 lg:pt-0">
+          {/* About Us Label */}
+          <div className="relative inline-block mb-4">
+            <span className="text-[#7E689A] text-sm font-semibold tracking-wider uppercase">
+              ABOUT US
+            </span>
+            <span className="absolute left-0 bottom-0 w-12 h-0.5 bg-red-600"></span>
+          </div>
+
+          {/* Main Heading */}
+          <h2 className="text-3xl md:text-4xl lg:text-[45px] font-bold text-[#383838] leading-tight mb-8">
             We Are Business Consultants Dedicated To Driving Your Success
           </h2>
-          <p className="text-sm sm:text-base leading-relaxed text-[#65676B] font-sans mb-6">
-            We’ve been a Strategy and Technology service provider for nearly two
-            decades, and we bring unrivaled capabilities, tools, technologies,
-            and talent to every engagement, augmented by an ecosystem of
-            best-of-breed partners that provide specialized expertise. We’ll
-            help you mobilize for change, navigate uncertainty, and flex as
-            needed, so you achieve sustained, profitable growth—a feat only 1 in
-            11 companies manages to pull off.
+
+          {/* Description */}
+          <p className="text-[#65676B] text-lg leading-relaxed mb-8">
+            We've been a Strategy and Technology service provider for nearly two decades, 
+            and we bring unrivaled capabilities, tools, technologies, and talent to every 
+            engagement, augmented by an ecosystem of best-of-breed partners that provide 
+            specialized expertise. We'll help you mobilize for change, navigate uncertainty, 
+            and flex as needed, so you achieve sustained, profitable growth—a feat only 1 
+            in 11 companies manages to pull off.
           </p>
-          <blockquote className="text-[#7F7F7F] font-sans leading-relaxed text-sm sm:text-base italic border-l-4 border-red-500 pl-4 mb-6">
-            “We offer creative solutions that have helped lots of brands,
-            individuals, organizations, and companies across the globe and
-            sectors develop and execute winning strategies and Technology
-            solutions”.
+
+          {/* Quote */}
+          <blockquote className="border-l-4 border-red-600 pl-6 mb-8 italic text-[#7F7F7F]">
+            "We offer creative solutions that have helped lots of brands, individuals,
+            organizations, and companies across the globe and sectors develop and execute 
+            winning strategies and Technology solutions".
           </blockquote>
-          <div className="flex flex-row justify-center mb-2 lg:block lg:mb:0 ">
-          <button className="px-4 py-2 text-sm font-bold text-white transition bg-red-500 shadow-md sm:py-3 sm:px-6 hover:bg-red-600">
-            Learn More →
+
+          {/* Learn More Button */}
+          <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded transition-colors duration-200 flex items-center group">
+            Learn More 
+            <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">
+              →
+            </span>
           </button>
-            
-          </div>
-          
         </div>
       </div>
     </section>
@@ -59,3 +83,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
