@@ -1,5 +1,4 @@
-import AboutUs from "../Components/AboutUs/About";
-import AboutSection from "../Components/AboutUs/AboutUs";
+import About from "../Components/AboutUs/About";
 import BusinessSolutions from "../Components/BusinessSolution/BusinessSolution";
 import CaseStudies from "../Components/CaseStudies/CaseStudies";
 import GetStarted from "../Components/GetStarted/GetStarted";
@@ -14,13 +13,12 @@ function Home() {
     <div>
       <Hero />
       <FeaturesSection />
-      <AboutUs />
+      <About />
       <BusinessSolutions />
       <MethodologySection />
       <GlobalLeader />
       <StatsSection />
       <CaseStudies />
-      <AboutSection/>
       <GetStarted />
     </div>
   );

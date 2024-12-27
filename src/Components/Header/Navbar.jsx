@@ -32,13 +32,13 @@ const Navbar = () => {
             Strategy
           </a>
           <a
-            href="#technology"
+            href="/Technology"
             className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
           >
             Technology
           </a>
           <a
-            href="#about"
+            href="/AboutUs"
             className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
           >
             About

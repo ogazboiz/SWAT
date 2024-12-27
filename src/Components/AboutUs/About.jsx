@@ -2,7 +2,7 @@ import React from "react";
 import aboutpic from "../../Assets/Images/aboutpic1.png";
 import aboutpic2 from "../../Assets/Images/aboutpic2.png";
 
-const AboutUs = () => {
+const About = () => {
   return (
     <section className="container mx-auto px-4 py-16 md:py-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -18,16 +18,16 @@ const AboutUs = () => {
           </div>
           
           {/* Secondary Image - Overlapped */}
-          <div className="absolute top-1/2 -right-12 z-20 w-2/3 bg-white p-3 rounded-lg shadow-lg transform -translate-y-1/4">
+          <div className="absolute top-1/2 h-[75%] lg:-right-12 -right-10 z-20 w-2/3 bg-white p-3 rounded-lg shadow-lg transform -translate-y-1/4">
             <img
               src={aboutpic2}
               alt="Secondary"
-              className="w-full h-auto rounded-lg object-cover"
+              className="w-full h-[100%] rounded-lg object-cover"
             />
           </div>
 
           {/* Counter Box */}
-          <div className="absolute -bottom-12 right-16 z-30 bg-[#150529] text-white p-8 rounded-lg shadow-xl">
+          <div className="absolute bottom-4 lg:right-80  md:right-80 z-30 bg-[#150529] h-[155px] lg:w-[250px] md:w-[250px] w-[200px] text-white p-8 rounded-lg shadow-xl">
             <div className="text-center">
               <p className="text-5xl font-bold mb-1">
                 10<sup className="text-xl">+</sup>
@@ -82,5 +82,5 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default About;
 
