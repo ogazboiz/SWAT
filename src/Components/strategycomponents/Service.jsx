@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import bgg from "../Assets/Images/videw.jpeg"
+import bgg from "../../Assets/Images/videw.jpeg"
 
 
 const Service = () => {

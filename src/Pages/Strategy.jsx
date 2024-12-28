@@ -1,8 +1,10 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
 import bg from "../Assets/Images/strat.png"
-import Consulting from '../section/Consulting'
-import Service from '../section/Service'
+import Consulting from '../Components/strategycomponents/Consulting'
+import Service from '../Components/strategycomponents/Service'
+import BenefitsForBusiness from '../Components/strategycomponents/BenefitsForBusiness '
+import ServicesSection from '../Components/strategycomponents/ServicesSection'
 
 function Strategy() {
   return (
@@ -14,6 +16,8 @@ function Strategy() {
         />
         <Consulting/>
         <Service/>
+        <ServicesSection/>
+        <BenefitsForBusiness/>
     </div>
   )
 }

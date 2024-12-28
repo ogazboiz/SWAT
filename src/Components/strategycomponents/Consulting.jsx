@@ -1,5 +1,5 @@
 import React from "react";
-import consult from "../Assets/Images/strat.png";
+import consult from "../../Assets/Images/strat.png";
 
 const Consulting = () => {
   return (
