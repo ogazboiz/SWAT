@@ -44,7 +44,7 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="#contact"
+            href="/ContactUs"
             className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
           >
             Contact

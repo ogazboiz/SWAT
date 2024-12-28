@@ -3,6 +3,7 @@ import RootLayout from "./Layout/RootLayout";
 import Home from "./Pages/Home";
 import Technology from "./Pages/Technology";
 import AboutUs from "./Pages/AboutUs";
+import ContactUs from "./Pages/ContactUs"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Route index element={<Home/>} />
             <Route path="/technology" element={<Technology/> }/>
             <Route path="/aboutus" element={<AboutUs/> }/>
+            <Route path="/contactus" element={<ContactUs/>  }/>
 
           </Route>
         </Routes>
