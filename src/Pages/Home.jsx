@@ -19,7 +19,6 @@ function Home() {
       <GlobalLeader />
       <StatsSection />
       <CaseStudies />
-      <GetStarted />
     </div>
   );
 }

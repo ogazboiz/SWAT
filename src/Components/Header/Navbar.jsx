@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import NavLogo from "../../Assets/Images/navbar.svg";
 import MoonIcon from "../../Assets/Icons/moon.png";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-50 shadow-md">
+    <header className="shadow-md bg-gray-50">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 lg:w-[90%] flex items-center justify-between h-16">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-900">
-          <img src={NavLogo} alt="Nav logo" className="w-full h-full  " />
+          <img src={NavLogo} alt="Nav logo" className="w-full h-full " />
           {/* <span className="text-red-600">sw</span>at
           <p className="text-xs font-normal text-gray-500">
             Strategy Worth and Technology
@@ -18,39 +19,39 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-6 text-gray-700">
-          <a
-            href="#home"
-            className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
+        <nav className="hidden space-x-6 text-gray-700 md:flex">
+          <Link
+            to="/"
+            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
           >
             Home
-          </a>
+          </Link>
           <a
-            href="#strategy"
-            className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
+            href="/strategy"
+            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
           >
             Strategy
           </a>
           <a
             href="/Technology"
-            className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
+            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
           >
             Technology
           </a>
           <a
             href="/AboutUs"
-            className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
+            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
           >
             About
           </a>
           <a
             href="/ContactUs"
-            className="font-jost font-bold text-nav leading-nav  hover:text-gray-900"
+            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
           >
             Contact
           </a>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="items-center hidden space-x-4 md:flex">
             <button
               className="text-white px-6 py-[1.5px] rounded-lg shadow hover:opacity-90 font-jost font-bold text-sm leading-9"
               style={{
@@ -70,7 +71,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 hover:text-gray-900 text-2xl p-2 rounded-lg"
+          className="p-2 text-2xl text-gray-700 rounded-lg md:hidden hover:text-gray-900"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "✖" : " ☰"}
@@ -79,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-white shadow-md">
+        <nav className="bg-white shadow-md md:hidden">
           <a
             href="#home"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -111,7 +112,7 @@ const Navbar = () => {
             Contact
           </a>
           <div className="flex items-center px-4 py-2">
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg shadow hover:opacity-90">
+            <button className="px-4 py-2 text-white rounded-lg shadow bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90">
               Hire Us
             </button>
             <button className="ml-4 text-gray-700 hover:text-gray-900">
