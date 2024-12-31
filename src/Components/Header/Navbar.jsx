@@ -1,55 +1,63 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import NavLogo from "../../Assets/Images/navbar.svg";
 import MoonIcon from "../../Assets/Icons/moon.png";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
-    <header className="shadow-md bg-gray-50">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8 lg:w-[90%] flex items-center justify-between h-16">
+    <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-gray-50">
+      <div className="flex items-center justify-between h-16 px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-[1280px]">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-900">
           <img src={NavLogo} alt="Nav logo" className="w-full h-full " />
-          {/* <span className="text-red-600">sw</span>at
-          <p className="text-xs font-normal text-gray-500">
-            Strategy Worth and Technology
-          </p> */}
         </div>
 
         {/* Desktop Menu */}
         <nav className="hidden space-x-6 text-gray-700 md:flex">
           <Link
             to="/"
-            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
+            className={`font-bold font-jost text-nav leading-nav hover:text-gray-900 ${
+              location.pathname === "/" ? "text-red-600" : ""
+            }`}
           >
             Home
           </Link>
-          <a
-            href="/strategy"
-            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
+          <Link
+            to="/strategy"
+            className={`font-bold font-jost text-nav leading-nav hover:text-gray-900 ${
+              location.pathname === "/strategy" ? "text-red-600" : ""
+            }`}
           >
             Strategy
-          </a>
-          <a
-            href="/Technology"
-            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
+          </Link>
+          <Link
+            to="/technology"
+            className={`font-bold font-jost text-nav leading-nav hover:text-gray-900 ${
+              location.pathname === "/technology" ? "text-red-600" : ""
+            }`}
           >
             Technology
-          </a>
-          <a
-            href="/AboutUs"
-            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
+          </Link>
+          <Link
+            to="/aboutus"
+            className={`font-bold font-jost text-nav leading-nav hover:text-gray-900 ${
+              location.pathname === "/aboutus" ? "text-red-600" : ""
+            }`}
           >
             About
-          </a>
-          <a
-            href="/ContactUs"
-            className="font-bold font-jost text-nav leading-nav hover:text-gray-900"
+          </Link>
+          <Link
+            to="/contactus"
+            className={`font-bold font-jost text-nav leading-nav hover:text-gray-900 ${
+              location.pathname === "/contactus" ? "text-red-600" : ""
+            }`}
           >
             Contact
-          </a>
+          </Link>
 
           <div className="items-center hidden space-x-4 md:flex">
             <button
@@ -61,63 +69,75 @@ const Navbar = () => {
             >
               HIRE US
             </button>
-            <button className= " px-[9px] py-[9px] rounded-full text-gray-700 hover:text-gray-900" style={{
+            <button
+              className="px-[9px] py-[9px] rounded-full text-gray-700 hover:text-gray-900"
+              style={{
                 background:
                   "linear-gradient(91.55deg, #150529 45%, #4E415D 45%, #382550 75%, #EC0112 100%)",
-              }}><img src={MoonIcon} alt="moon icon" className="w-[18px] h-[18px]  " /></button>
+              }}
+            >
+              <img src={MoonIcon} alt="moon icon" className="w-[18px] h-[18px]" />
+            </button>
           </div>
         </nav>
-
 
         {/* Mobile Menu Button */}
         <button
           className="p-2 text-2xl text-gray-700 rounded-lg md:hidden hover:text-gray-900"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? "✖" : " ☰"}
+          {isMenuOpen ? "✖" : "☰"}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <nav className="bg-white shadow-md md:hidden">
-          <a
-            href="#home"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          <Link
+            to="/"
+            className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
+              location.pathname === "/" ? "text-red-600" : ""
+            }`}
           >
             Home
-          </a>
-          <a
-            href="#strategy"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          </Link>
+          <Link
+            to="/strategy"
+            className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
+              location.pathname === "/strategy" ? "text-red-600" : ""
+            }`}
           >
             Strategy
-          </a>
-          <a
-            href="#technology"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          </Link>
+          <Link
+            to="/technology"
+            className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
+              location.pathname === "/technology" ? "text-red-600" : ""
+            }`}
           >
             Technology
-          </a>
-          <a
-            href="#about"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          </Link>
+          <Link
+            to="/aboutus"
+            className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
+              location.pathname === "/aboutus" ? "text-red-600" : ""
+            }`}
           >
             About
-          </a>
-          <a
-            href="#contact"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          </Link>
+          <Link
+            to="/contactus"
+            className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
+              location.pathname === "/contactus" ? "text-red-600" : ""
+            }`}
           >
             Contact
-          </a>
+          </Link>
           <div className="flex items-center px-4 py-2">
             <button className="px-4 py-2 text-white rounded-lg shadow bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90">
               Hire Us
             </button>
-            <button className="ml-4 text-gray-700 hover:text-gray-900">
-              🌙
-            </button>
+            <button className="ml-4 text-gray-700 hover:text-gray-900">🌙</button>
           </div>
         </nav>
       )}

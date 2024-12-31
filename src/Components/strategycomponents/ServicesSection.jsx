@@ -3,87 +3,82 @@ import lady from "../../Assets/Images/lady.jfif";
 
 const ServicesSection = () => {
   return (
-    <section className=" w-full bg-white h-full">
-      <div className="max-w-[1280px] max-h-[764.4px] bg-[#1D013F] mx-auto px-4 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 items-start">
+    <section className="w-full h-full lg:h-[769.2px] bg-[#150529] border-b-[6px] border-[#EC0112]">
+      <div className="max-w-[1280px] mx-auto px-6">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-10">
           {/* Left Content */}
-          <div className="space-y-6 w-[420px]">
-            <div className="relative inline-block">
-              <h5 className="text-[#7E689A] text-sm font-semibold uppercase tracking-wider mb-2">
+          <div className="space-y-6 max-w-full lg:max-w-[420px] pt-12 lg:pt-[148px] py-4">
+            <div className="flex items-center gap-3">
+              <h5 className="text-[#7E689A] text-sm font-semibold uppercase tracking-wider">
                 Our Services
-                <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-red-600"></span>
               </h5>
+              <div className="w-12 h-0.5 bg-red-600"></div>
             </div>
 
-            <div className="w-[395.84px]">
-            <h2 className="w-[363px] text-[25px] md:text-[] lg:text-[45px] font-sanss font-semibold text-white leading-[58px]">
-              Discover The Unique Features That Set Our Services Apart
-            </h2>
-            
-            <p className="text-gray-300 text-lg leading-relaxed">
-              We're guided by our unwavering commitment to always do the right thing 
-              by our clients, people, and communities.
-            </p>
+            <div>
+              <h2 className="text-[25px] md:text-[35px] lg:text-[45px] font-sanss font-semibold text-white leading-snug lg:leading-[58.5px]">
+                Discover The Unique Features That Set Our Services Apart
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-300">
+                We're guided by our unwavering commitment to always do the right
+                thing by our clients, people, and communities.
+              </p>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="relative">
-            {/* Main Image */}
-            <div className="relative   w-[394px] h-[600px] rounded-lg ">
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative w-full lg:max-w-[394px] h-[500px] sm:h-[600px] lg:h-[764px] overflow-hidden">
               <img
                 src={lady}
                 alt="Professional consultant"
-                className="w-full h-full object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
-
-            {/* Service Cards */}
-            
           </div>
-          <div className=" top-1/2  bg-red-400  h-[full] right-0 w-[420px] space-y-6 ">
-              {/* Business Strategy Card */}
-              <div className="bg-white p-6 lg:right-36 relative h-[164px]  w-[494px] shadow-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Business Strategy Consultancy
-                </h3>
-                <p className="text-gray-600">
-                  We help companies build strategies for their businesses, helping 
-                  them grow in their profit.
-                </p>
-              </div>
 
+          {/* Service Cards */}
+          <div className="space-y-6 pt-12 lg:pt-[148px] lg:pb-[100px] relative py-6 lg:py-0">
+            {/* Business Strategy Card */}
+            <div className="lg:absolute bg-white p-6 shadow-xl border-b-4 border-[#EC0112]  lg:ml-[-90px] lg:top-[145px] z-30 ">
+              <h3 className="mb-3 text-lg lg:text-[19.84px] font-semibold text-gray-900">
+                Business Strategy Consultancy
+              </h3>
+              <p className="text-[#7F7F7F] text-sm lg:text-base">
+                We help companies build strategies for their businesses, helping
+                them grow in their profit.
+              </p>
+            </div>
+
+            <div className="space-y-6 lg:absolute">
               {/* Brand Strategy Card */}
-              <div className="bg-red-800 p-6  shadow-xl ">
-                <h3 className="text-xl font-bold text-white mb-3">
+              <div className="lg:mt-[140px] p-6 shadow-xl bg-[#320D46] border-b-4 border-[#EC0112]">
+                <h3 className="mb-3 text-lg lg:text-[19.84px] font-semibold text-white">
                   Brand Strategy Development
                 </h3>
-                <p className="text-gray-300">
-                  Every company's priority is achieving its goals. We help companies 
-                  develop the long-term plan that will enable them to achieve it.
+                <p className="text-sm text-gray-300 lg:text-base">
+                  Every company's priority is achieving its goals. We help
+                  companies develop the long-term plan that will enable them to
+                  achieve it.
                 </p>
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-red-600"></div>
               </div>
 
               {/* Result & Profitability Card */}
-              <div className="bg-[#4C0963] p-6 shadow-xl relative">
-                <h3 className="text-xl font-bold text-white mb-3">
+              <div className="p-6 shadow-xl bg-[#320D46] border-b-4 border-[#EC0112]">
+                <h3 className="mb-3 text-lg lg:text-[18.94px] font-semibold text-white">
                   Result & Profitability Improvement
                 </h3>
-                <p className="text-gray-300">
-                  Improving profitability can be a challenging task. We work closely 
-                  with companies until it scales up their profits.
+                <p className="text-sm text-gray-300 lg:text-base">
+                  Improving profitability can be a challenging task. We work
+                  closely with companies until it scales up their profits.
                 </p>
-                
               </div>
             </div>
-
+          </div>
         </div>
       </div>
-      <div className=" bottom-0 left-0 w-full h-1 bg-red-600"></div>
     </section>
   );
 };
 
 export default ServicesSection;
-

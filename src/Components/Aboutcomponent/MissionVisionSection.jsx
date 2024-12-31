@@ -1,93 +1,103 @@
 import React from "react";
+import { Play, Eye, Users2 } from 'lucide-react';
 import backgroundImage from "../../Assets/Images/mission.jfif";
 import grd from "../../Assets/Images/missiongrad.png";
+import card from "../../Assets/Images/girl.jpeg";
 
-const MissionVisionSection = () => {
+export default function MissionVision() {
   return (
-    // <section className="bg-[#1D013F] text-white py-12 lg:py-20 px-6 lg:px-16">
-     <section
-          className="relative px-6 lg:h-[633px]  w-full  flex items-center justify-center"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right 0%  bottom 5%",
-          }}
-        >
-          {/* Overlay */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url(${grd})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
+    <section
+      className="relative flex items-center justify-center w-full px-4 py-12 md:px-6 md:py-16 lg:py-24"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Background with gradient overlay */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${grd})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      ></div>
 
-      {/* Top Section */}
-      <div className="text-center lg:text-left max-w-4xl mx-auto mb-12">
-        <h5 className="text-sm font-semibold text-red-600 uppercase tracking-widest">
-          Our Mission & Vision
-        </h5>
-        <h2 className="text-3xl lg:text-4xl font-bold mt-2">
-          Discover The Core Principles That Guide Us
-        </h2>
-      </div>
+      {/* Content */}
+      <div className="relative z-10 w-full mx-auto max-w-[1280px] font-sanss px-5">
+        {/* Header Section */}
+        <div className="mb-8 text-left md:mb-12 lg:mb-16">
+          <div className="flex items-center gap-2 mb-4 items-left">
+            <h2 className="text-xs font-bold tracking-wider text-white sm:text-sm">
+              OUR MISSION & VISION
+            </h2>
+            <div className="h-0.5 w-14 sm:w-14 bg-red-600"></div>
+          </div>
+          <h1 className=" text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-[45px]">
+            Discover The Core Principles That Guide Us
+          </h1>
+        </div>
 
-      {/* Content Section */}
-      <div className="flex flex-col  max-w-[1280px]  mx-auto  px-6 lg:flex-row items-center justify-center gap-8 lg:gap-12">
-        {/* Video Section */}
-        <div className="w-full lg:w-1/3 relative group">
-          <img
-            src="https://via.placeholder.com/300x400"
-            alt="Video Thumbnail"
-            className="w-full h-auto rounded-lg"
-          />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg cursor-pointer group-hover:bg-opacity-60">
-            <button className="bg-white text-red-600 rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
-              ▶
+        {/* Content Grid */}
+        <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 max-w-[1280px] mx-auto">
+          {/* Video Section */}
+          <div className="relative aspect-video md:aspect-[4/3] w-full lg:w-[407.21px] lg:h-[257.9px] overflow-hidden shadow-lg">
+            <img
+              src={card}
+              alt="Office environment"
+              className="object-cover w-full h-full"
+            />
+            <button
+              className="absolute inset-0 flex items-center justify-center transition-colors bg-black/30 hover:bg-black/40 group"
+              aria-label="Play video"
+            >
+              <div className="flex items-center justify-center w-12 h-12 transition-transform bg-white rounded-full sm:w-16 sm:h-16 md:w-20 md:h-20 group-hover:scale-105">
+                <Play className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-[#2D1857] ml-0.5 sm:ml-1" />
+              </div>
             </button>
           </div>
-        </div>
 
-        {/* Cards Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 lg:w-2/3">
-          {/* Vision Card */}
-          <div className="bg-white text-black p-6 rounded-lg shadow-lg">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="bg-purple-600 text-white w-12 h-12 flex items-center justify-center rounded-full">
-                {/* Icon Placeholder */}
-                🌟
+          {/* Cards Section */}
+          <div className="space-y-8 lg:col-span-1 xl:col-span-2 xl:flex xl:space-y-0 xl:space-x-8">
+            {/* Vision Card */}
+            <div className="relative bg-white shadow-lg border-b-4 border-[#EC0112]">
+              <div className="p-6 sm:p-8 h-full w-full xl:w-[407px] xl:h-[217px]">
+                <div className="absolute w-12 h-12 sm:w-14 sm:h-14 bg-[#2D1857] rounded-lg flex items-center justify-center mb-10 top-[-20px] sm:top-[-25px] left-6 sm:left-8">
+                  <Eye className="w-5 h-5 text-white sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
+                <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl md:text-2xl">
+                  Our Vision
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600 sm:text-base">
+                  We are a one-stop-shop for Strategy and Technology Solution
+                  that helps the world's most ambitious change makers define the
+                  future.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Our Vision</h3>
             </div>
-            <p>
-              We are a one-stop-shop for Strategy and Technology Solutions that
-              help the world's most ambitious change-makers define the future.
-            </p>
-          </div>
 
-          {/* Mission Card */}
-          <div className="bg-white text-black p-6 rounded-lg shadow-lg">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="bg-purple-600 text-white w-12 h-12 flex items-center justify-center rounded-full">
-                {/* Icon Placeholder */}
-                👥
+            {/* Mission Card */}
+            <div className="relative bg-white shadow-lg border-b-4 border-[#EC0112]">
+              <div className="p-6 sm:p-8 h-full w-full xl:w-[407px] xl:h-[217px]">
+                <div className="absolute w-12 h-12 sm:w-14 sm:h-14 bg-[#2D1857] rounded-lg flex items-center justify-center mb-10 top-[-20px] sm:top-[-25px] left-6 sm:left-8">
+                  <Users2 className="w-5 h-5 text-white sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
+                <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl md:text-2xl">
+                  Our Mission
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600 sm:text-base">
+                  To deploy our talent, expertise and insight to organizations
+                  tackling today's urgent challenges across all sectors.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Our Mission</h3>
             </div>
-            <p>
-              To deploy our talent, expertise, and insight to organizations
-              tackling today’s urgent challenges across all sectors.
-            </p>
           </div>
         </div>
       </div>
-
-      {/* Bottom Statistics Section */}
-     
     </section>
   );
-};
+}
 
-export default MissionVisionSection;

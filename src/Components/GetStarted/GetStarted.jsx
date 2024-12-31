@@ -24,7 +24,7 @@ const GetStarted = () => {
         }}
       ></div>
       {/* Content */}
-      <div className="relative z-10 flex flex-col space-y-6 md:text-left md:items-start lg:ml-0 lg:w-[1440px] lg:justify-start py-5">
+      <div className="relative z-10 flex flex-col space-y-6 md:text-left md:items-start lg:ml-0 lg:w-[1280px] lg:justify-start py-5">
         {/* Text Section */}
         <h2 className="lg:text-[44.65px] text-[24.65px] font-sans font-semibold text-white leading-[1.4] lg:w-[601px] lg:pb-[50px]">
           Let Us Discuss Your Business <br /> Goals & Create A Standard <br />{" "}

@@ -5,11 +5,14 @@ import Technology from "./Pages/Technology";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
 import Strategy from "./Pages/Strategy";
+import ScrollToTop from "./Components/ScrollToTop";
+
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-slate-300 h-dvh">
+    <ScrollToTop/>
+      <div className="">
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />

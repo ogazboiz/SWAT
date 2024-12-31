@@ -57,16 +57,16 @@ const SuccessInAction = () => {
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+    <section className="w-full py-20 bg-white md:py-32">
+      <div className="max-w-[1280px] px-4 mx-auto">
+        <div className="max-w-4xl mx-auto mb-16 text-center">
           {/* Header */}
           <div className="inline-flex flex-col items-center mb-12">
             <h5 className="text-[#7E689A] text-sm font-medium uppercase tracking-wider mb-2 relative">
               Success in Action
               <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 h-0.5 w-12 bg-red-600"></span>
             </h5>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-6">
+            <h2 className="mt-6 text-3xl font-bold text-gray-900 md:text-4xl">
               You Can Customize Everything!
             </h2>
           </div>
@@ -99,20 +99,20 @@ const SuccessInAction = () => {
                 <img
                   src={study.image}
                   alt={study.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
               {/* Content Box */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-8 w-[85%] bg-white shadow-lg transition-all duration-300 hover:bg-gray-900">
-                <div className="p-6 relative">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition-colors">
+                <div className="relative p-6">
+                  <h3 className="mb-2 text-xl font-semibold transition-colors group-hover:text-white">
                     {study.title}
                   </h3>
-                  <p className="text-sm text-gray-600 font-medium mb-2 group-hover:text-gray-300 transition-colors">
+                  <p className="mb-2 text-sm font-medium text-gray-600 transition-colors group-hover:text-gray-300">
                     {study.category}
                   </p>
-                  <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
+                  <p className="text-sm text-gray-500 transition-colors group-hover:text-gray-400">
                     {study.description}
                   </p>
                   <div className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600"></div>

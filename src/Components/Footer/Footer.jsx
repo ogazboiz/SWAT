@@ -8,7 +8,7 @@ import { FaPinterest } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="py-10 text-white bg-[#150529] w-full lg:h-[469px]">
-      <div className="container px-6 mx-auto  lg:w-[1440px] pt-8">
+      <div className="container px-6 mx-auto  lg:w-[1280px] pt-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:gap-4" >
           {/* Logo and About Section */}
           <div className="col-span-1 lg:w-[110%]">
@@ -79,7 +79,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="flex flex-col items-center justify-between text-sm lg:flex-row">
-          <p className="text-center font-sanss text-base font-medium lg:text-left">
+          <p className="text-base font-medium text-center font-sanss lg:text-left">
             All Rights Reserved – SWAT 2024 (C)
           </p>
           <div className="flex mt-4 space-x-4 lg:mt-0">

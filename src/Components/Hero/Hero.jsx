@@ -8,7 +8,7 @@ const Hero = () => {
  
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 mx-auto lg:w-[90%] lg:px-8 text-white">
+      <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 mx-auto lg:w-[1280px] lg:px-8 text-white">
       <div className="flex items-center justify-center lg:mb-6 lg:justify-start">
           <span className="text-[12.7px] font-semibold font-sanss leading-4 tracking-wider uppercase">
             Unlock Your Business Potential
